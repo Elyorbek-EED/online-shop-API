@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/online_store</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">7722</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <mapping class="com.example.onlineMagazin.entity.category.Category"/>
+        <mapping class="com.example.onlineMagazin.entity.language.Language"/>
+        <mapping class="com.example.onlineMagazin.entity.status.Status"/>
+        <mapping class="com.example.onlineMagazin.entity.role.Role"/>
+        <mapping class="com.example.onlineMagazin.entity.product.Product"/>
+        <mapping class="com.example.onlineMagazin.entity.authUser.AuthUser"/>
+        <mapping class="com.example.onlineMagazin.entity.color.Color"/>
+        <mapping class="com.example.onlineMagazin.entity.size.Size"/>
+        <mapping class="com.example.onlineMagazin.entity.product.ProductColor"/>
+        <mapping class="com.example.onlineMagazin.entity.product.ProductImage"/>
+        <mapping class="com.example.onlineMagazin.entity.product.ProductComment"/>
+        <mapping class="com.example.onlineMagazin.entity.product.ProductLike"/>
+        <mapping class="com.example.onlineMagazin.entity.product.ProductSize"/>
+        <mapping class="com.example.onlineMagazin.entity.feedback.Feedback"/>
+        <mapping class="com.example.onlineMagazin.entity.productPrice.ProductPrice"/>
+        <mapping class="com.example.onlineMagazin.entity.productRating.ProductRatingType"/>
+        <mapping class="com.example.onlineMagazin.entity.productRating.ProductRating"/>
+    </session-factory>
+</hibernate-configuration>

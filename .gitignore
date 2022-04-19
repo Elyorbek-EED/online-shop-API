@@ -1,0 +1,11 @@
+/.idea/compiler.xml
+/.idea/vcs.xml
+/src/test/java/com/example/onlineMagazin/ZakovatApplicationTests.java
+/.idea/misc.xml
+/.idea/jpa-buddy.xml
+/.idea/jarRepositories.xml
+/.idea/encodings.xml
+/.idea/.gitignore
+
+# Project exclude paths
+/target/
